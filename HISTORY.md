@@ -9,3 +9,4 @@
 - 2026-01-24T20:25:42.424Z: Add animations and transitions
 - 2026-01-25T00:25:42.424Z: Implement AI chat rule engine
 - 2026-01-25T07:25:42.424Z: Implement generic drug schema
+- 2026-01-25T09:25:42.424Z: Write Medex scraper script
