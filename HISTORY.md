@@ -11,3 +11,4 @@
 - 2026-01-25T07:25:42.424Z: Implement generic drug schema
 - 2026-01-25T09:25:42.424Z: Write Medex scraper script
 - 2026-01-25T15:25:42.424Z: Update package dependencies
+- 2026-01-25T19:25:42.424Z: Implement fuzzy matching algorithm
