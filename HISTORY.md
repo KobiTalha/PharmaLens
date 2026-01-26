@@ -19,3 +19,4 @@
 - 2026-01-26T10:25:42.424Z: Initial commit
 - 2026-01-26T13:25:42.424Z: Add intent detection regex
 - 2026-01-26T17:25:42.424Z: Add intent detection regex
+- 2026-01-26T22:25:42.424Z: Configure Vercel deployment
