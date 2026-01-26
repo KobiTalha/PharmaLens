@@ -17,3 +17,4 @@
 - 2026-01-26T05:25:42.424Z: Write Medex scraper script
 - 2026-01-26T07:25:42.424Z: Fix bug in search engine
 - 2026-01-26T10:25:42.424Z: Initial commit
+- 2026-01-26T13:25:42.424Z: Add intent detection regex
