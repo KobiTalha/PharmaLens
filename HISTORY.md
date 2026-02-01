@@ -48,3 +48,4 @@
 - 2026-01-31T12:25:42.424Z: Add database connection pool
 - 2026-01-31T18:25:42.424Z: Clean up scraped data
 - 2026-02-01T00:25:42.424Z: Clean up scraped data
+- 2026-02-01T02:25:42.424Z: Implement generic drug schema
