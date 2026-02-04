@@ -67,3 +67,4 @@
 - 2026-02-03T19:25:42.424Z: Add category filtering
 - 2026-02-03T21:25:42.424Z: Clean up scraped data
 - 2026-02-04T02:25:42.424Z: Design hero section
+- 2026-02-04T06:25:42.424Z: Fix typo in disclaimer
