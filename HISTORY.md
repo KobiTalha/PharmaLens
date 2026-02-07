@@ -81,3 +81,4 @@
 - 2026-02-06T09:25:42.424Z: Add batch processing for scraping
 - 2026-02-06T13:25:42.424Z: Design hero section
 - 2026-02-06T19:25:42.424Z: Refactor database queries
+- 2026-02-07T01:25:42.424Z: Map aliases to generic names
