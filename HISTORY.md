@@ -89,3 +89,4 @@
 - 2026-02-08T03:25:42.424Z: Refactor database queries
 - 2026-02-08T05:25:42.424Z: Fix layout shift in drug detail page
 - 2026-02-08T09:25:42.424Z: Optimize PostgreSQL queries
+- 2026-02-08T11:25:42.424Z: Update README with architecture
