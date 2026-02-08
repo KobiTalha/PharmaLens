@@ -92,3 +92,4 @@
 - 2026-02-08T11:25:42.424Z: Update README with architecture
 - 2026-02-08T13:25:42.424Z: Map aliases to generic names
 - 2026-02-08T18:25:42.424Z: Setup project structure
+- 2026-02-08T23:25:42.424Z: Implement generic drug schema
