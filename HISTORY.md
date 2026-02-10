@@ -98,3 +98,4 @@
 - 2026-02-09T11:25:42.424Z: Update package dependencies
 - 2026-02-09T18:25:42.424Z: Fix bug in search engine
 - 2026-02-10T00:25:42.424Z: Optimize font loading
+- 2026-02-10T03:25:42.424Z: Add intent detection regex
