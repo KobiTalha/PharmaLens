@@ -129,3 +129,4 @@
 - 2026-02-15T20:25:42.424Z: Initial commit
 - 2026-02-16T03:25:42.424Z: Update README with architecture
 - 2026-02-16T08:25:42.424Z: Add animations and transitions
+- 2026-02-16T10:25:42.424Z: Add basic routing
