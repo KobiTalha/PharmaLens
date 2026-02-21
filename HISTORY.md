@@ -153,3 +153,4 @@
 - 2026-02-20T11:25:42.424Z: Fix typo in disclaimer
 - 2026-02-20T18:25:42.424Z: Map aliases to generic names
 - 2026-02-21T00:25:42.424Z: Optimize font loading
+- 2026-02-21T07:25:42.424Z: Add loading skeletons
