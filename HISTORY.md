@@ -157,3 +157,4 @@
 - 2026-02-21T11:25:42.424Z: Configure Vercel deployment
 - 2026-02-21T13:25:42.424Z: Add error boundaries
 - 2026-02-21T19:25:42.424Z: Update README with architecture
+- 2026-02-22T01:25:42.424Z: Add category filtering
