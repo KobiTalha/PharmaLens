@@ -163,3 +163,4 @@
 - 2026-02-22T17:25:42.424Z: Add animations and transitions
 - 2026-02-22T23:25:42.424Z: Finalize production styling
 - 2026-02-23T03:25:42.424Z: Add category filtering
+- 2026-02-23T09:25:42.424Z: Map aliases to generic names
