@@ -166,3 +166,4 @@
 - 2026-02-23T09:25:42.424Z: Map aliases to generic names
 - 2026-02-23T12:25:42.424Z: Map aliases to generic names
 - 2026-02-23T19:25:42.424Z: Fix typo in disclaimer
+- 2026-02-23T22:25:42.424Z: Update UI color palette
