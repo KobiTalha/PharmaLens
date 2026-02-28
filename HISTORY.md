@@ -192,3 +192,4 @@
 - 2026-02-28T00:25:42.424Z: Add search input component
 - 2026-02-28T06:25:42.424Z: Clean up scraped data
 - 2026-02-28T13:25:42.424Z: Implement fallback in-memory db
+- 2026-02-28T17:25:42.424Z: Add database connection pool
