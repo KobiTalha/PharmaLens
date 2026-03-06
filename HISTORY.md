@@ -225,3 +225,4 @@
 - 2026-03-06T07:25:42.424Z: Add loading skeletons
 - 2026-03-06T11:25:42.424Z: Add category filtering
 - 2026-03-06T17:25:42.424Z: Map aliases to generic names
+- 2026-03-06T21:25:42.424Z: Optimize PostgreSQL queries
