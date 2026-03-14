@@ -259,3 +259,4 @@
 - 2026-03-13T14:25:42.424Z: Add SEO meta tags
 - 2026-03-13T21:25:42.424Z: Implement fallback in-memory db
 - 2026-03-14T02:25:42.424Z: Fix typo in disclaimer
+- 2026-03-14T04:25:42.424Z: Add batch processing for scraping
