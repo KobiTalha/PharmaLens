@@ -286,3 +286,4 @@
 - 2026-03-19T00:25:42.424Z: Update README with architecture
 - 2026-03-19T04:25:42.424Z: Add error boundaries
 - 2026-03-19T06:25:42.424Z: Update UI color palette
+- 2026-03-19T12:25:42.424Z: Map aliases to generic names
