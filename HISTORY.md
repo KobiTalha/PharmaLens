@@ -288,3 +288,4 @@
 - 2026-03-19T06:25:42.424Z: Update UI color palette
 - 2026-03-19T12:25:42.424Z: Map aliases to generic names
 - 2026-03-19T17:25:42.424Z: Update chat UI
+- 2026-03-19T19:25:42.424Z: Implement generic drug schema
