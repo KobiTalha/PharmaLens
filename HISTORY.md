@@ -290,3 +290,4 @@
 - 2026-03-19T17:25:42.424Z: Update chat UI
 - 2026-03-19T19:25:42.424Z: Implement generic drug schema
 - 2026-03-20T02:25:42.424Z: Implement fallback in-memory db
+- 2026-03-20T04:25:42.424Z: Refactor database queries
