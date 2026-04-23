@@ -12,6 +12,9 @@ CREATE TABLE IF NOT EXISTS drugs (
   description TEXT,
   usage_info TEXT,
   dosage_type TEXT,
+  dosage_forms TEXT,
+  warnings TEXT,
+  contraindications TEXT,
   created_at TIMESTAMP DEFAULT NOW()
 );
 
@@ -44,6 +47,10 @@ CREATE INDEX IF NOT EXISTS idx_brands_name ON brands(LOWER(name));
 CREATE INDEX IF NOT EXISTS idx_brands_drug ON brands(drug_id);
 CREATE INDEX IF NOT EXISTS idx_aliases_alias ON aliases(LOWER(alias));
 CREATE INDEX IF NOT EXISTS idx_aliases_drug ON aliases(drug_id);
+
+ALTER TABLE drugs ADD COLUMN IF NOT EXISTS dosage_forms TEXT;
+ALTER TABLE drugs ADD COLUMN IF NOT EXISTS warnings TEXT;
+ALTER TABLE drugs ADD COLUMN IF NOT EXISTS contraindications TEXT;
 `;
 
 async function migrate() {

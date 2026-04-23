@@ -7,7 +7,8 @@ module.exports = async (req, res) => {
   if (req.method !== 'POST') return res.status(405).json({ error: 'POST only' });
   try {
     const { message } = req.body || {};
-    if (!message) return res.status(400).json({ success: false, error: 'Message required' });
+    if (!message || typeof message !== 'string') return res.status(400).json({ success: false, error: 'Message required and must be text' });
+    if (message.length > 200) return res.status(400).json({ success: false, error: 'Message too long. Maximum 200 characters.' });
     const result = await chat(message);
     res.json({ success: true, ...result });
   } catch (e) { res.status(500).json({ success: false, error: e.message }); }

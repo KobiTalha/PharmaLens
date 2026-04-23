@@ -7,15 +7,28 @@ const CATEGORY_ICONS = {'Fever & Pain':'🤒','Antibiotics':'💉','Gastric & Di
 let debounceTimer = null;
 let chatHistory = [];
 
+const cache = new Map();
+
 // === API Client ===
 async function api(endpoint, opts = {}) {
+  const cacheKey = endpoint + (opts.body ? JSON.stringify(opts.body) : '');
+  if (opts.method === 'GET' || !opts.method) {
+    if (cache.has(cacheKey)) return cache.get(cacheKey);
+  }
+
   try {
     const res = await fetch(API + endpoint, {
       ...opts,
       headers: { 'Content-Type': 'application/json', ...opts.headers },
       body: opts.body ? JSON.stringify(opts.body) : undefined
     });
-    return await res.json();
+    const data = await res.json();
+    if ((opts.method === 'GET' || !opts.method) && data.success) {
+      cache.set(cacheKey, data);
+      // clear cache after 5 minutes
+      setTimeout(() => cache.delete(cacheKey), 5 * 60 * 1000);
+    }
+    return data;
   } catch (e) { console.error('API Error:', e); return { success: false, error: e.message }; }
 }
 
@@ -223,7 +236,7 @@ window.sendChat = async function(msg) {
   if (typing) typing.remove();
 
   if (data.success) {
-    let reply = data.reply.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>');
+    let reply = parseMarkdown(data.reply);
     // Add inline drug cards
     if (data.drugs && data.drugs.length > 0) {
       reply += '<div style="margin-top:.75rem">';
@@ -261,6 +274,21 @@ function drugCard(d, i = 0) {
 }
 
 function escHtml(s) { if (!s) return ''; const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
+
+function parseMarkdown(text) {
+  if (!text) return '';
+  let html = escHtml(text);
+  html = html.replace(/### (.*?)\n/g, '<h3 style="margin: 0.5rem 0; color: var(--accent);">$1</h3>\n');
+  html = html.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+  html = html.replace(/\*(.*?)\*/g, '<em>$1</em>');
+  html = html.replace(/^- (.*?)$/gm, '<li>$1</li>');
+  html = html.replace(/(<li>.*?<\/li>)/gs, '<ul style="margin-left: 1.5rem; margin-bottom: 0.5rem;">$1</ul>');
+  // Avoid nested uls
+  html = html.replace(/<\/ul>\n*<ul[^>]*>/g, '');
+  html = html.replace(/\n\n/g, '<br><br>');
+  html = html.replace(/\n/g, '<br>');
+  return html;
+}
 
 // === Header Search with Autocomplete ===
 function initHeaderSearch() {
