@@ -13,6 +13,7 @@ const drugHandler = require('./api/drug');
 const brandHandler = require('./api/brand');
 const categoriesHandler = require('./api/categories');
 const chatHandler = require('./api/chat');
+const analyticsHandler = require('./api/analytics');
 
 function parseBody(req) {
   return new Promise((resolve) => {
@@ -45,6 +46,7 @@ const server = http.createServer(async (req, res) => {
         case 'brand': return await brandHandler(req, res);
         case 'categories': return await categoriesHandler(req, res);
         case 'chat': return await chatHandler(req, res);
+        case 'analytics': return await analyticsHandler(req, res);
         default: res.statusCode = 404; return res.end(JSON.stringify({ error: 'Not found' }));
       }
     } catch (e) { res.statusCode = 500; return res.end(JSON.stringify({ error: e.message })); }
