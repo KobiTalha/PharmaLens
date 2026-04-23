@@ -3,9 +3,11 @@
 # 💊 PharmaLens
 **The Ultimate Bangladesh Drug Intelligence & AI Platform**
 
-[![Vercel Deployment](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com)
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Deployed-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://pharmalens-alpha.vercel.app/)
 [![Supabase](https://img.shields.io/badge/Supabase-Database-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+
+**[✨ View Live Platform](https://pharmalens-alpha.vercel.app/)**
 
 *A highly-optimized, serverless drug intelligence platform that maps generic medications to brand names available in Bangladesh. Powered by an intelligent search engine, an AI conversational chatbot, and a robust PostgreSQL data ingestion pipeline.*
 
