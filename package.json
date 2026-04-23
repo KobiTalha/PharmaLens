@@ -1,0 +1,23 @@
+{
+  "name": "pharmalens",
+  "version": "1.0.0",
+  "description": "PharmaLens — Drug Intelligence Platform for Bangladesh",
+  "main": "api/index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "migrate": "node scripts/migrate.js",
+    "seed": "node scripts/seed.js",
+    "scrape": "node scripts/scraper.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "axios": "^1.7.9",
+    "cheerio": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

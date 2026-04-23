@@ -1,0 +1,7 @@
+node_modules/
+.env
+scraped_data.json
+*.db
+.vercel
+
+.vercel
